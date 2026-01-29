@@ -289,7 +289,6 @@ img {
 
 
 .section-hero {
-    display: block;
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -300,15 +299,16 @@ img {
     background-position: 50% 50%;
     background-color: #2e2f42;
     max-width: 320px;
-    margin: 0 auto;
+    margin-bottom: 96px;
 
 
 }
 
 .section-hero .container {
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -323,7 +323,7 @@ img {
     max-width: 216px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
@@ -353,4 +353,86 @@ img {
 .button-order-service:focus {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #404bbf;
+}
+
+/*===Section-hero-768/1158===*/
+
+@media screen and (min-width:768px) {
+    .section-hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        max-width: 768px;
+
+    }
+
+    .title-hero {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .section-hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .title-hero {
+        font-size: 56px;
+        margin-bottom: 48px;
+    }
+}
+
+
+/* -- Section-our-features -- */
+
+
+
+
+.list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+    margin: 0 auto;
+}
+
+/* .text-item {
+    width: 264px;
+} */
+
+.head-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+
+
+.list-of-features .text-list {
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+@media screen and (min-width:768px) {
+    .list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        max-width: 356px;
+        margin: 0;
+    }
 }
