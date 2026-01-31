@@ -792,3 +792,168 @@ img {
 
 
 /* ========\\\\\====FOOTER-SECTION=====/////====== */
+
+
+
+.footer-item {
+    width: 288px;
+    text-align: center;
+}
+
+.parent-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+
+.footer-box {
+    background-color: #2e2f42;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    width: 100%;
+}
+
+
+.logotype {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Raleway",
+        sans-serif;
+    color: #4d5ae5;
+}
+
+
+.text-logo-footer {
+    color: #f4f4fd;
+
+}
+
+
+
+.footer-text {
+    text-align: left;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+
+}
+
+
+
+.social-footer {
+    text-align: center;
+    width: 208px;
+    height: 80px;
+
+}
+
+.social-link-footer {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: #31d0aa;
+
+}
+
+.link-icon-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.link-footer-icon-svg {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
+}
+
+.social-media {
+
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+
+
+/* ========\\\\\====FOOTER-SECTION__768/1158px=====/////====== */
+
+
+
+@media screen and (min-width: 768px) {
+
+    .parent-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 72px 24px;
+    }
+
+    .footer-item {
+        max-width: 264px;
+
+    }
+
+    .social-media {
+        max-width: 208px;
+    }
+
+    .footer-item,
+    .social-footer,
+    .footer-form {
+        width: calc((100% - 24px) / 2);
+        text-align: left;
+    }
+
+    .link-icon-footer {
+        justify-content: flex-start;
+    }
+
+
+
+    .footer-text {
+        margin-top: 19px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:1158px) {
+
+    .parent-footer {
+
+        gap: 120px;
+    }
+
+    .footer-box {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+
+
+}
