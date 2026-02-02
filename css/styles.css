@@ -1126,9 +1126,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-left: 16px;
     padding-top: 72px;
-    padding-right: 24px;
     padding-bottom: 40px;
     height: 100%;
 
@@ -1148,11 +1146,11 @@ img {
     flex-direction: column;
     gap: 40px;
 }
-
-/* .link-menu.active{
+.mail-tel-menu.active,
+.link-menu.active{
 
     color: #404bbf;
-} */
+}
 
 
 .link-menu {
@@ -1634,5 +1632,49 @@ label {
     .mobile-menu {
         display: none;
     }
+
+}
+
+
+/* =======\\\====MODAL-BACKDROP 768px/1158px====///======== */
+
+
+@media screen and (min-width:768px){
+
+.modal {
+        width: 408px;
+        min-height: 584px;
+    }
+
+.form-input {
+        width: 360px;
+        height: 40px;
+       
+    }
+
+.checkbox-label {
+        width: 360px;
+        min-height: 16px;
+
+    }
+
+.modal {
+    min-width: 408px;
+    min-height: 584px;
+   
+
+}
+
+.form-comment {
+   
+    width: 360px;
+    min-height: 120px;
+  
+}
+
+
+
+
+
 
 }
