@@ -304,7 +304,7 @@ img {
     padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url("../images/people-office.jpg");
+        url("../images/people-office-mob.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -402,7 +402,9 @@ img {
 /* -- Section-our-features -- */
 
 
-
+.icon-box {
+    display: none;
+}
 
 .list {
     display: flex;
@@ -470,6 +472,7 @@ img {
 @media screen and (min-width:1158px) {
 
     .icon-box {
+        display: flex;
         width: 264px;
         height: 112px;
         background-color: #f4f4fd;
@@ -707,6 +710,9 @@ img {
 
 
 .parent {
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+        0 1px 1px rgba(46, 47, 66, 0.16),
+        0 1px 6px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1146,8 +1152,9 @@ img {
     flex-direction: column;
     gap: 40px;
 }
+
 .mail-tel-menu.active,
-.link-menu.active{
+.link-menu.active {
 
     color: #404bbf;
 }
@@ -1560,7 +1567,7 @@ label {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-   justify-content:center;
+    justify-content: center;
     gap: 8px;
     font-weight: 400;
     font-size: 12px;
@@ -1570,7 +1577,7 @@ label {
     margin-bottom: 0;
     width: 256px;
     min-height: 31px;
-    
+
 }
 
 
@@ -1639,38 +1646,38 @@ label {
 /* =======\\\====MODAL-BACKDROP 768px/1158px====///======== */
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 
-.modal {
+    .modal {
         width: 408px;
         min-height: 584px;
     }
 
-.form-input {
+    .form-input {
         width: 360px;
         height: 40px;
-       
+
     }
 
-.checkbox-label {
+    .checkbox-label {
         width: 360px;
         min-height: 16px;
 
     }
 
-.modal {
-    min-width: 408px;
-    min-height: 584px;
-   
+    .modal {
+        min-width: 408px;
+        min-height: 584px;
 
-}
 
-.form-comment {
-   
-    width: 360px;
-    min-height: 120px;
-  
-}
+    }
+
+    .form-comment {
+
+        width: 360px;
+        min-height: 120px;
+
+    }
 
 
 
