@@ -193,7 +193,7 @@ img {
     .contacts {
         display: block;
         font-style: normal;
-        /* margin-left: auto; */
+        margin-left: auto;
 
     }
 
@@ -229,11 +229,7 @@ img {
         align-items: center;
     }
 
-    .contacts {
-        font-style: normal;
-        margin-left: auto;
 
-    }
 
     .contacts-list {
         display: flex;
@@ -302,18 +298,20 @@ img {
 .section-hero {
     padding-top: 72px;
     padding-bottom: 72px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url("../images/people-office-mob.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     background-color: #2e2f42;
-    max-width: 320px;
+    width: 100%;
+
     margin: 0 auto;
 
 
 }
+
+
 
 .section-hero .container {
     display: flex;
@@ -366,13 +364,27 @@ img {
     background: #404bbf;
 }
 
+@media (min-resolution: 2dppx) {
+    .section-hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-mob@2x.jpg");
+    }
+}
+
 /*===Section-hero-768/1158===*/
+
+
+
 
 @media screen and (min-width:768px) {
     .section-hero {
         padding-top: 112px;
         padding-bottom: 112px;
         max-width: 768px;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-tab.jpg");
 
     }
 
@@ -384,12 +396,30 @@ img {
     }
 }
 
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+    .section-hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-tab@2x.jpg");
+    }
+}
+
 @media screen and (min-width:1158px) {
     .section-hero {
         padding-top: 188px;
         padding-bottom: 188px;
         max-width: 1440px;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office.jpg");
+    }
 
+    @media (min-width: 1158px) and (min-resolution: 2dppx) {
+        .section-hero {
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url("../images/people-office@2x.jpg");
+        }
     }
 
     .title-hero {
@@ -478,14 +508,13 @@ img {
         background-color: #f4f4fd;
         border: 1px solid #8e8f99;
         border-radius: 4px;
-        display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 8px;
     }
 
     .list {
-        display: flex;
+
         gap: 24px;
         margin: 0 auto;
     }
@@ -710,9 +739,8 @@ img {
 
 
 .parent {
-    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
-        0 1px 1px rgba(46, 47, 66, 0.16),
-        0 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -973,7 +1001,7 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 320px;
+    width: 100%;
     height: 80px;
 
 }
@@ -994,7 +1022,7 @@ img {
     align-items: center;
     max-width: 288px;
     /* gap: 16px; */
-    width: 100%;
+    /* width: 100%; */
 
 }
 
@@ -1077,7 +1105,7 @@ img {
         align-items: center;
         max-width: 453px;
         gap: 24px;
-        width: 100%;
+
 
     }
 
@@ -1085,15 +1113,13 @@ img {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        min-width: 453px
+
     }
 
 
     .email-subscribe {
-        min-width: 264px;
-        height: 40px;
         margin-bottom: 0;
-
+        flex-shrink: 0;
     }
 
 }
@@ -1153,7 +1179,11 @@ img {
     gap: 40px;
 }
 
-.mail-tel-menu.active,
+.mail-tel-menu.active {
+    color: #4d5ae5;
+}
+
+
 .link-menu.active {
 
     color: #404bbf;
@@ -1213,8 +1243,8 @@ img {
     justify-content: flex-start;
     flex-direction: row;
     gap: 40px;
-    width: 24px;
-    height: 24px;
+    /* width: 24px;
+    height: 24px; */
     fill: #f4f4fd;
 }
 
@@ -1475,7 +1505,7 @@ label {
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
     fill: #ffffff;
-    /
+
 }
 
 .form-comment:hover,
