@@ -258,7 +258,7 @@ img {
 
 .logo {
     display: block;
-    /* align-items: center; */
+
     justify-content: flex-start;
     flex-direction: row;
     font-weight: 700;
